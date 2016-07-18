@@ -20,7 +20,7 @@
 # Ignore Byebug command history file.
 .byebug_history
 
-app/frontend/javascripts
+/app/assets/javascripts
 
 /node_modules/*
 
