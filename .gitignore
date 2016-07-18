@@ -24,4 +24,4 @@ app/frontend/javascripts
 
 /node_modules/*
 
-/.idea
+/.idea/*
