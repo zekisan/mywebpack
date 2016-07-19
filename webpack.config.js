@@ -2,6 +2,7 @@
 
 const path    = require('path'),
       webpack = require('webpack'),
+      isProduction = process.env['NODE_ENV'] === 'production',
       vendorPaths = /\/(frontend\/javascripts\/vendor|node_modules)\//;
 
 let config = {
@@ -58,5 +59,9 @@ let config = {
     })
   ]
 };
+
+if (isProduction) {
+  config.plugins.push(new webpack.optimize.UglifyJsPlugin({ compress: { warnings: false } }));
+}
 
 module.exports = config;
