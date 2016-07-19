@@ -6,7 +6,7 @@ const Teste = React.createClass({
   render() {
     return (
         <div>
-          <p>FUNCIONA!!!</p>
+          <h1>FUNCIONA!!!</h1>
         </div>
     )
   }
