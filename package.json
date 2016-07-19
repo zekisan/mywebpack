@@ -7,7 +7,8 @@
   },
   "scripts": {
     "webpack:deploy": "webpack --config=webpack.config.js -p",
-    "heroku-postbuild": "npm run webpack:deploy"
+    "heroku-postbuild": "npm run webpack:deploy",
+    "start": "webpack -d --display-reasons --display-chunks --progress -c"
   },
   "dependencies": {
     "babel-core": "^6.8.0",
