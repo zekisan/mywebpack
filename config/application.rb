@@ -11,5 +11,10 @@ module Mywebpack
     # Settings in config/environments/* take precedence over those specified here.
     # Application configuration should go into files in config/initializers
     # -- all .rb files in that directory are automatically loaded.
+    config.webpack = {
+        :use_manifest => true,
+        :asset_manifest => {public: 'bundle'},
+        :common_manifest => {},
+    }
   end
 end

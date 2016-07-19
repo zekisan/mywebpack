@@ -31,5 +31,9 @@ config.plugins = [
   // as these may not have a package.json file
   new webpack.ResolverPlugin([
     new webpack.ResolverPlugin.DirectoryDescriptionFilePlugin('.bower.json', ['main'])
-  ])
+  ]),
+  new webpack.ProvidePlugin({
+    $: 'jquery',
+    jQuery: 'jquery'
+  })
 ];
